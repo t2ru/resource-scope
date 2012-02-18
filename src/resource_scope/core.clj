@@ -1,6 +1,6 @@
 (ns resource-scope.core)
 
-(def ^:dynamic *scope* nil)
+(def ^{:dynamic true} *scope* nil)
 
 (defn run-scope-actions []
   (let [failed (= (first *scope*) :failed)
